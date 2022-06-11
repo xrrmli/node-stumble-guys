@@ -1,1 +1,1 @@
-{"DeviceId":"kontol","GoogleId":"","FacebookId":"","Token":"kontol","Timestamp":kontol,"Hash":"kontol"}
+{"DeviceId":"kontol","GoogleId":"kontol","FacebookId":"kontol","Token":"kontol","Timestamp":kontol,"Hash":"kontol"} 
