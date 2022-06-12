@@ -1,6 +1,7 @@
 const fetch = require('node-fetch');
 const moment = require('moment');
 const fs = require('fs');
+const rs = require('readline-sync');
 
 const GoStumble = (auth) => new Promise((resolve, reject) => {
 
@@ -22,9 +23,10 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
 
 (async () => {
 
+    const auth = rs.question('Enter your auth token : ');
+
     while (true) {
 
-        const auth = fs.readFileSync('auth.txt', 'utf8');
         const result = await GoStumble(auth);
         if (!result) {
 
