@@ -7,8 +7,9 @@
 5. Go to request tab and copy authorization value !
 
 ## Video tutorial
-
-[![Watch the video](https://cdn-icons-png.flaticon.com/256/6851/6851099.png)](https://streamable.com/pa7o9f)
+<a href="https://streamable.com/pa7o9f">
+  <img src="https://i.ibb.co/Wvjz7XS/click-removebg-preview.png" width="250" height="96">
+</a>
 
 ## Example auth token
 ```sh
