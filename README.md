@@ -6,7 +6,7 @@
 4. Open HTTP Canary and search http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3
 5. Go to request tab and copy authorization value !
 
-## Video tutorial
+## Video tutorial get auth token 
 <a href="https://streamable.com/pa7o9f">
   <img src="https://i.ibb.co/Wvjz7XS/click-removebg-preview.png" width="250" height="96">
 </a>
