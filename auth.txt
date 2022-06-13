@@ -1,1 +1,0 @@
-{"DeviceId":"kontol","GoogleId":"kontol","FacebookId":"kontol","Token":"kontol","Timestamp":kontol,"Hash":"kontol"} 
