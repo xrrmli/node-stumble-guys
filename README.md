@@ -6,6 +6,16 @@
 4. Open HTTP Canary and search http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3
 5. Go to request tab and copy authorization value !
 
+## Video tutorial
+
+[![Watch the video](https://cdn-icons-png.flaticon.com/256/6851/6851099.png)](https://streamable.com/pa7o9f)
+
+## Example auth token
+```sh
+{"DeviceId":"kontol","GoogleId":"kontol","FacebookId":"kontol","Token":"kontol","Timestamp":69696969,"Hash":"kontol"}
+```
+
+
 ## How to use ?
 1. git clone https://github.com/dkmpostor/node-stumble-guys
 2. cd node-stumble-guys
@@ -13,14 +23,6 @@
 4. node index.js
 5. Paste auth token 
 6. Done !
-
-## Example auth token
-```sh
-{"DeviceId":"kontol","GoogleId":"kontol","FacebookId":"kontol","Token":"kontol","Timestamp":69696969,"Hash":"kontol"}
-```
-## Video tutorial
-
-[![Watch the video](https://cdn-icons-png.flaticon.com/256/6851/6851099.png)](https://streamable.com/pa7o9f)
 
 ## Proof
 ![alt text](https://i.ibb.co/RCZxtPS/ss.png)
