@@ -30,8 +30,7 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
         const result = await GoStumble(auth);
         if (!result) {
 
-            console.log('[+] Wrong cookie / Expired cookie !');
-            break;
+            console.log(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie / Expired cookie / Server Down`);
 
         } else if (result) {
 
