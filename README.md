@@ -7,10 +7,7 @@
 3. If you already got Rank 1 , Claim the reward and make sure your crown increases
 4. Open HTTP Canary and search http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3
 5. Go to request tab and copy authorization value !
-
-## Note Important !
-
-``` After running bot , close the game & dont relogin .. It will expire your token ```
+6. After running bot , close the game & dont relogin .. It will expire your token
 
 ## Video tutorial get auth token 
 <a href="https://streamable.com/pa7o9f">
