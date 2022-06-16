@@ -41,7 +41,7 @@ By : ${chalk.red('@dkmpostor')} - ${chalk.blue('https://dkmpostor.herokuapp.com/
         const result = await GoStumble(auth);
         if (!result) {
 
-            process.stdout.write(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
+            console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
 
         } else if (result.includes('User')) {
 
@@ -51,7 +51,7 @@ By : ${chalk.red('@dkmpostor')} - ${chalk.blue('https://dkmpostor.herokuapp.com/
             const trophy = data.User.SkillRating;
             const crown = data.User.Crowns;
             
-            process.stdout.write(chalk.green(`\r[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | Trophy : ${trophy} | Crown : ${crown}`));
+            console.log(chalk.green(`\r[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | Trophy : ${trophy} | Crown : ${crown}`));
         }
     }
     
