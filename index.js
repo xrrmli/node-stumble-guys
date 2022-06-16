@@ -42,6 +42,7 @@ By : ${chalk.red('@dkmpostor')} - ${chalk.blue('https://dkmpostor.herokuapp.com/
         if (!result) {
 
             console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
+            break;
 
         } else if (result.includes('User')) {
 
@@ -51,7 +52,11 @@ By : ${chalk.red('@dkmpostor')} - ${chalk.blue('https://dkmpostor.herokuapp.com/
             const trophy = data.User.SkillRating;
             const crown = data.User.Crowns;
             
-            console.log(chalk.green(`\r[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | Trophy : ${trophy} | Crown : ${crown}`));
+            console.log(chalk.green(`\r[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.blue(`Crown : ${crown}`)}`));
+            
+        } else if (result == 'BANNED') {
+            console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Banned !`));
+            break;
         }
     }
     
