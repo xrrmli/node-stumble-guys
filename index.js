@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 const moment = require('moment');
-const fs = require('fs');
+const chalk = require('chalk');
 const rs = require('readline-sync');
 
 const GoStumble = (auth) => new Promise((resolve, reject) => {
@@ -23,16 +23,27 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
 
 (async () => {
 
-    const auth = rs.question('Enter your auth token : ');
+    console.log(`
+███████ ████████ ██    ██ ███    ███ ██████  ██      ███████         
+██         ██    ██    ██ ████  ████ ██   ██ ██      ██           
+███████    ██    ██    ██ ██ ████ ██ ██████  ██      █████          
+     ██    ██    ██    ██ ██  ██  ██ ██   ██ ██      ██            
+███████    ██     ██████  ██      ██ ██████  ███████ ███████    
+
+By : ${chalk.red('@dkmpostor')} - ${chalk.blue('https://dkmpostor.herokuapp.com/')}
+`);
+
+    const auth = rs.question('[+] Enter your auth token : ');
+    console.log('');
 
     while (true) {
 
         const result = await GoStumble(auth);
         if (!result) {
 
-            console.log(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie / Expired cookie / Server Down`);
+            process.stdout.write(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
 
-        } else if (result) {
+        } else if (result.includes('User')) {
 
             const data = JSON.parse(result);
             const username = data.User.Username;
@@ -40,10 +51,8 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
             const trophy = data.User.SkillRating;
             const crown = data.User.Crowns;
             
-            console.log(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | Trophy : ${trophy} | Crown : ${crown}`);
-
+            process.stdout.write(chalk.green(`\r[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | Trophy : ${trophy} | Crown : ${crown}`));
         }
-        
     }
     
 
