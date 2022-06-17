@@ -20,12 +20,7 @@
 ```
 
 ## How to use ?
-1. git clone https://github.com/dkmpostor/node-stumble-guys
-2. cd node-stumble-guys
-3. npm i
-4. node index.js
-5. Paste auth token 
-6. Done !
+![](https://user-images.githubusercontent.com/80010446/174270705-ef3e9f24-f4e3-42f9-8640-15ab699900ef.gif)
 
 ## Proof
-![alt text](https://i.ibb.co/RCZxtPS/ss.png)
+![](https://i.ibb.co/RCZxtPS/ss.png)
