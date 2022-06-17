@@ -21,7 +21,7 @@
 
 ## How to use ?
 <a href="https://user-images.githubusercontent.com/80010446/174270705-ef3e9f24-f4e3-42f9-8640-15ab699900ef.gif">
-  <img src="https://user-images.githubusercontent.com/80010446/174270705-ef3e9f24-f4e3-42f9-8640-15ab699900ef.gif" width="661px" height="331px">
+  <img src="https://user-images.githubusercontent.com/80010446/174270705-ef3e9f24-f4e3-42f9-8640-15ab699900ef.gif" width="90%">
 </a>
 
 ## Proof
