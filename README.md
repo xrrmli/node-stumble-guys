@@ -25,4 +25,4 @@
 </a>
 
 ## Proof
-![](https://i.ibb.co/RCZxtPS/ss.png)
+![ss](https://user-images.githubusercontent.com/80010446/174358039-1476fa06-ac8a-4c6a-bfa6-9ca8f3acafc2.png)
