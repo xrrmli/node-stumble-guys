@@ -55,8 +55,14 @@ By : ${chalk.red('@dkmpostor')} - ${chalk.blue('https://dkmpostor.herokuapp.com/
             console.log(chalk.green(`\r[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.blue(`Crown : ${crown}`)}`));
             
         } else if (result == 'BANNED') {
+
             console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Banned !`));
             break;
+            
+        } else if (result == 'SERVER_ERROR') {
+
+            continue;
+            
         }
     }
     
