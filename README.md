@@ -9,7 +9,7 @@
 5. Go to request tab and copy authorization value !
 6. After running bot , close the game & dont relogin .. It will expire your token
 
-## Video tutorial get auth token 
+## Video How to get auth token !
 <a href="https://streamable.com/pa7o9f">
   <img src="https://i.ibb.co/Wvjz7XS/click-removebg-preview.png" width="250" height="96">
 </a>
