@@ -8,6 +8,7 @@
 4. Open HTTP Canary and search http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3
 5. Go to request tab and copy authorization value !
 6. After running bot , close the game & dont relogin .. It will expire your token
+7. DO WITH YOUR OWN RISK !! YOUR ACCOUNT WILL BE BANNED
 
 ## Video How to get auth token !
 <a href="https://streamable.com/pa7o9f">
