@@ -15,7 +15,7 @@
   <img src="https://i.ibb.co/Wvjz7XS/click-removebg-preview.png" width="250" height="96">
 </a>
 
-## Example auth token
+## Example Auth Token
 ```sh
 {"DeviceId":"kontol","GoogleId":"kontol","FacebookId":"kontol","Token":"kontol","Timestamp":69696969,"Hash":"kontol"}
 ```
