@@ -8,24 +8,22 @@
 4. Open HTTP Canary and search http://kitkabackend.eastus.cloudapp.azure.com:5010/round/finishv2/3
 5. Go to request tab and copy authorization value !
 6. After running bot , close the game & dont relogin .. It will expire your token
+7. DO WITH YOUR OWN RISK !! YOUR ACCOUNT WILL BE BANNED
 
-## Video tutorial get auth token 
+## Video How to get auth token !
 <a href="https://streamable.com/pa7o9f">
   <img src="https://i.ibb.co/Wvjz7XS/click-removebg-preview.png" width="250" height="96">
 </a>
 
-## Example auth token
+## Example Auth Token
 ```sh
 {"DeviceId":"kontol","GoogleId":"kontol","FacebookId":"kontol","Token":"kontol","Timestamp":69696969,"Hash":"kontol"}
 ```
 
 ## How to use ?
-1. git clone https://github.com/dkmpostor/node-stumble-guys
-2. cd node-stumble-guys
-3. npm i
-4. node index.js
-5. Paste auth token 
-6. Done !
+<a href="https://user-images.githubusercontent.com/80010446/174403786-2dd1b2b5-01c3-49f2-8c72-db9259b96872.gif">
+  <img src="https://user-images.githubusercontent.com/80010446/174403786-2dd1b2b5-01c3-49f2-8c72-db9259b96872.gif" width="95%">
+</a>
 
 ## Proof
-![alt text](https://i.ibb.co/RCZxtPS/ss.png)
+![ss](https://user-images.githubusercontent.com/80010446/174358039-1476fa06-ac8a-4c6a-bfa6-9ca8f3acafc2.png)
