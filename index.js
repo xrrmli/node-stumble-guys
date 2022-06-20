@@ -31,39 +31,87 @@ const GoStumble = (auth) => new Promise((resolve, reject) => {
 ███████    ██     ██████  ██      ██ ██████  ███████ ███████    
 
 By : ${chalk.red('@dkmpostor')} - ${chalk.blue('https://dkmpostor.herokuapp.com/')}
+
+Features :
+
+1. ${chalk.magenta('Push Crown + Trophy')}
+2. ${chalk.magenta('Push Trophy Only')}
 `);
 
+    const feature = rs.question('[+] Enter feature needed : ');
     const auth = rs.question('[+] Enter your auth token : ');
     console.log('');
 
-    while (true) {
+    if (feature == '1') {
 
-        const result = await GoStumble(auth);
-        if (!result) {
+        while (true) {
 
-            console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
-            break;
+            var code = '3';
+            const result = await GoStumble(code, auth);
+            if (!result) {
 
-        } else if (result.includes('User')) {
+                console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
+                break;
 
-            const data = JSON.parse(result);
-            const username = data.User.Username;
-            const country = data.User.Country;
-            const trophy = data.User.SkillRating;
-            const crown = data.User.Crowns;
-            
-            console.log(chalk.green(`\r[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.blue(`Crown : ${crown}`)}`));
-            
-        } else if (result == 'BANNED') {
+            } else if (result.includes('User')) {
 
-            console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Banned !`));
-            break;
-            
-        } else if (result == 'SERVER_ERROR') {
+                const data = JSON.parse(result);
+                const username = data.User.Username;
+                const country = data.User.Country;
+                const trophy = data.User.SkillRating;
+                const crown = data.User.Crowns;
+                
+                console.log(chalk.green(`\r[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.blue(`Crown : ${crown}`)}`));
+                
 
-            continue;
-            
+            } else if (result == 'BANNED') {
+
+                console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Banned !`));
+                break;
+                
+            } else if (result == 'SERVER_ERROR') {
+
+                continue;
+                
+            }
         }
+        
+    } else if (feature == '2') {
+
+        while (true) {
+
+            var code = '2';
+            const result = await GoStumble(code, auth);
+            if (!result) {
+
+                console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
+                break;
+
+            } else if (result.includes('User')) {
+
+                const data = JSON.parse(result);
+                const username = data.User.Username;
+                const country = data.User.Country;
+                const trophy = data.User.SkillRating;
+                
+                console.log(chalk.green(`\r[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`Trophy : ${trophy}`)}`));
+                
+            } else if (result == 'BANNED') {
+
+                console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Banned !`));
+                break;
+                
+            } else if (result == 'SERVER_ERROR') {
+
+                continue;
+                
+            }
+        }
+
+    } else {
+
+        console.log(chalk.red('[!] Features not available !'));
+
     }
     
 
