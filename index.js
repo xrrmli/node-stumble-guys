@@ -2,6 +2,7 @@ const fetch = require('node-fetch');
 const moment = require('moment');
 const chalk = require('chalk');
 const rs = require('readline-sync');
+const delay = require('delay');
 
 const GoStumble = (code, auth) => new Promise((resolve, reject) => {
 
@@ -50,7 +51,7 @@ Features :
             const result = await GoStumble(code, auth);
             if (!result) {
 
-                console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
                 break;
 
             } else if (result.includes('User')) {
@@ -61,12 +62,12 @@ Features :
                 const trophy = data.User.SkillRating;
                 const crown = data.User.Crowns;
                 
-                console.log(chalk.green(`\r[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.blue(`Crown : ${crown}`)}`));
-                
+                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.blue(`Crown : ${crown}`)}`));
+                await delay(60000)
 
             } else if (result == 'BANNED') {
 
-                console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Banned !`));
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Banned !`));
                 break;
                 
             } else if (result == 'SERVER_ERROR') {
@@ -84,7 +85,7 @@ Features :
             const result = await GoStumble(code, auth);
             if (!result) {
 
-                console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
                 break;
 
             } else if (result.includes('User')) {
@@ -94,11 +95,12 @@ Features :
                 const country = data.User.Country;
                 const trophy = data.User.SkillRating;
                 
-                console.log(chalk.green(`\r[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`Trophy : ${trophy}`)}`));
+                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`Trophy : ${trophy}`)}`));
+                await delay(60000)
                 
             } else if (result == 'BANNED') {
 
-                console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Banned !`));
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Banned !`));
                 break;
                 
             } else if (result == 'SERVER_ERROR') {
