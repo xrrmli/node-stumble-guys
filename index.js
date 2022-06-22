@@ -63,7 +63,7 @@ Features :
                 const crown = data.User.Crowns;
                 
                 console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.blue(`Crown : ${crown}`)}`));
-                await delay(60000) // Change this , in miliseconds
+                await delay(7500) // Change this , in miliseconds
 
             } else if (result == 'BANNED') {
 
@@ -96,7 +96,7 @@ Features :
                 const trophy = data.User.SkillRating;
                 
                 console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`Trophy : ${trophy}`)}`));
-                await delay(6000) // Change this , in miliseconds
+                await delay(7500) // Change this , in miliseconds
                 
             } else if (result == 'BANNED') {
 
